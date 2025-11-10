@@ -1,15 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  background: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+}
 
-.animate-shake {
-  animation: shake 0.25s;
+.shake {
+  animation: shake 0.35s;
 }
 
 @keyframes shake {
-  0% { transform: translate(2px, 2px) rotate(0deg); }
-  25% { transform: translate(-2px, -2px) rotate(-1deg); }
-  50% { transform: translate(2px, -2px) rotate(1deg); }
-  75% { transform: translate(-2px, 2px) rotate(1deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
+  0% { transform: translate(2px, 0px); }
+  25% { transform: translate(-2px, 0px); }
+  50% { transform: translate(3px, 0px); }
+  75% { transform: translate(-3px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.input {
+  padding: 10px;
+  margin-top: 8px;
+  width: 250px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
 }
